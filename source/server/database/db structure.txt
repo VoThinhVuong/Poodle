@@ -1,0 +1,41 @@
+ACCOUNT(accountID, username, password, type)
+- (*) accountID : unique number for each account (auto inc)
+- username : unique string used as identifier [can omit]
+- password : password to access the account
+- type : account type (student = 1/lecturer = 2/admin = 3)
+
+ACCOUNT_INFO(accountID, fullName)
+- (*) accountID : the account
+- fullName : full name of the person using the account
+
+[note: ACCOUNT_INFO may be merged into ACCOUNT]
+
+COURSE(courseID, courseName, department)
+- courseID : unique number/string for each course
+- courseName : full name of the course
+- credit(int): number of credit of this course
+
+SCORES(accountID, courseID, scores)
+- (*) accountID (-> STUDENT) : student's account
+- (*) courseID (-> COURSE) : course taken part in
+- scores : scores for the course [can be divided into multiple categories]
+
+OPEN_REGISTRATION(courseID, dateOpen, dateClose)
+- (*) courseID (-> COURSE) : course open for registration
+- (*) dateOpen : the date registration opens
+- dateClose : the date registration closes
+
+CLASS(classID, courseID, weekday, timeStart, timeEnd, dateStart, dateEnd)
+- (*) classID : unique number/string for each class
+- courseID (-> COURSE) : the course being taught in the class
+- weekday : the day of the week the class takes place (sun = 1, mon = 2, tue = 3, ..., sat = 7)
+- timeStart : when the class starts each week
+- timeEnd : when the class ends each week
+- location: the department where the class taught
+- semester: semester when the class taught (1, 2 or 3)
+- dateStart : the date the class begins
+- dateEnd : the date the class concludes
+
+PARTICIPATION(accountID, classID)
+- (*) accountID (-> ACCOUNT) : the student/lecturer
+- (*) classID (-> CLASS) : the class the person is taking part in

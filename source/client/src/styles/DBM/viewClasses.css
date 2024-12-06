@@ -1,0 +1,96 @@
+.DBM_container .input_box {
+    width: 90%;
+}
+.DBM_container .input_box label {
+    position: relative;
+    right: 15px;
+    font-size: medium;
+    font-size: 1.2rem;
+}
+
+.DBM_container .input_box input {
+    width: 100%;
+    padding: 10px;
+    border: 2px solid #ddd;
+    border-radius: 5px;
+    background-color: #fff;
+    color: #333;
+    font-size: 16px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    box-sizing: border-box;
+    transition: border-color 0.3s, box-shadow 0.3s;
+}
+
+.DBM_container .input_box button {
+    margin-right: 50px;
+    margin-left: 50px;
+}
+
+.Edit_class {
+    width: 100%;
+    height: auto;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+    background-color: white;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    box-sizing: border-box;
+}
+
+.Edit_class form label {
+    font-size: medium;
+    line-height: 2rem;
+    font-family: inherit;
+}
+
+.Edit_class form label input, .Edit_class form label select {
+    margin-left: 5px;
+    border-radius: 4px;
+    padding-left: 10px;
+}
+
+.Edit_class .Submit_Section {
+    width: 100%;;
+    display: flex;
+    justify-content: space-around;
+}
+
+.Edit_class .Submit_Section button {
+    font-size: 16px;
+    cursor: pointer;
+    transition: background-color 0.3s ease, transform 0.3s ease;
+}
+
+.Tab {
+    align-items: center;
+    table-layout: auto;
+    width: 90%;
+    border-collapse: separate;
+    border-spacing:0 15px;
+}
+
+.Tab th, .Tab td {
+    text-align: left;
+    background-color: white;
+    padding: 15px;
+}
+
+#col_left {
+    border-top-left-radius: 15px;
+    border-bottom-left-radius: 15px;
+}
+
+#col_right {
+    border-top-right-radius: 15px;
+    border-bottom-right-radius: 15px;
+}
+
+.input_box {
+    display: table-row;
+}
+
+.input_box label, .input_box input {
+    display: table-cell;
+}

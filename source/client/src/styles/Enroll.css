@@ -1,0 +1,74 @@
+.Enroll_container {
+    position: relative;
+    top: 100px;
+    
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    align-items: center;
+
+    margin: auto;
+    width: 80%;
+    height: 100%;
+}
+
+.Open_course {
+    width: 100%;
+    height: 100px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: white;
+
+    margin-top: 20px;
+    margin-bottom: 20px;
+    font-size: 1.5rem;
+    border-radius: 30px;
+    animation: popup 0.7s;
+}
+
+
+.Open_course p {
+    position: relative;
+    left: 40px;
+}
+
+.Open_course div {
+    height: inherit;
+    width: 50%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.Open_course div p{
+    position: relative;
+    left: 40px;
+}
+
+
+.Open_course div div button {
+    width: 50%;
+    font-family: Anonymous Pro;
+    height: inherit;
+    background-color: #3B7CD0;
+    color: white;
+    border: none;
+    font-size: 1.5rem;
+}
+
+#enroll_button {
+    border-radius: 0 30px 30px 0;
+    border-left: solid white 2px;
+}
+
+#leave_button {
+    border-radius: 30px 0px 0px 30px;
+    border-right: solid white 2px;
+}
+
+.Open_course div button:hover {
+    cursor:pointer;
+    background-color: white;
+    color: #3B7CD0;
+    transition: 0.3s;
+}

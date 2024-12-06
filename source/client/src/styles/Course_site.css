@@ -1,0 +1,105 @@
+.Course_Container {
+    width: 80%;
+    padding: 2%;
+}
+
+.Course_Menu button {
+    border-width: 0;
+    border-top-left-radius: 15px;
+    border-top-right-radius: 15px;
+    min-width: 100px;
+}
+
+.inac-button {
+    background-color: #3B7CD0;
+    color: white;
+}
+
+.active-button {
+    background-color: white;
+    color: black;
+}
+
+.inac-button:hover {
+    background-color: #2b5488;
+}
+
+.Course_Content {
+    position: inherit;
+    background-color: white;
+    width: 100%;
+    border-radius: 15px;
+    border-top-left-radius: 0px;
+    padding: 1%;
+}
+
+.Course_Menu button p {
+    font-family: Anonymous Pro;
+    font-size: 20px;
+}
+
+.Course-info p {
+    color: black;
+    font-weight: bold;
+}
+
+.Course_Content .Anon_page span {
+    display: flex;
+    justify-content: space-between;
+}
+
+.Course_Content .Anon_page {
+    background-color: #3B7CD0;
+    color: white;
+    border-radius: 15px;
+    padding-left: 10px;
+    padding-right: 10px;
+    display: flex;
+    flex-direction: column;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.edit, .delete, .add, .refresh, .view {
+    background-image: url(../assets/edit.png);
+    background-repeat: no-repeat;
+    background-position: 50% 50%;
+    background-size: 20px;
+    width: 30px;
+    height: 30px;
+    border: none;
+    margin: 0;
+    background-color: white;
+}
+
+.add {
+    background-image: url(../assets/add.png);
+}
+
+.delete {
+    background-image: url(../assets/delete.png);
+}
+
+.refresh {
+    background-image: url(../assets/refresh.png);
+}
+
+.view {
+    background-image: url(../assets/view.png);
+}
+
+.edit:hover, .delete:hover, .add:hover, .refresh:hover, .view:hover {
+    opacity: 50%;
+}
+
+table {
+    margin-top: 20px;
+    width: 100%;
+    background-color: #C6DDFF;
+    border-radius: 15px;
+}
+
+table tr {
+    border-top: solid white 20px;
+    text-align: center;
+}

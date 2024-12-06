@@ -1,0 +1,15 @@
+/* Inside src/App.css */
+
+html {
+  box-sizing: border-box;
+}
+
+:root {
+  font-family: Anonymous Pro;
+}
+
+body {
+  background: linear-gradient(90deg, #C6DDFF, #DCDCDC);
+  margin: 0;
+  padding: 0;
+}

@@ -1,0 +1,119 @@
+.DBM_home {
+    height: 100vh;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+}
+
+.Header {
+    display: flex;
+    flex-direction: column;
+    flex: 1;
+    padding: 1rem;
+    box-sizing: border-box;
+}
+
+.Header h1 {
+    margin: 0;
+    text-align: center;
+    text-decoration: none;
+}
+
+.Header .container-header {
+    width: 50%;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex: 1;
+    margin: 0;
+    padding: 0;
+}
+
+.left, .right {
+    display: flex;
+    align-items: center;
+    position: inherit;
+}
+
+.left {
+    bottom: 150px;
+}
+
+.right {
+    bottom: 100px;
+}
+
+.Header ul li {
+    display: inline-block;
+    border: 2px solid #007bff;
+    border-radius: 5px;
+    padding: 10px 20px;
+    background-color: #f8f9fa;
+    text-align: center;
+    text-decoration: none;
+    color: #007bff;
+    transition: background-color 0.3s, border-color 0.3s;
+}
+
+.right ul li:hover {
+    background-color: #3B7CD0;
+    color: white;
+}
+
+.DBM_home ul li a {
+    color: inherit;
+    font-weight: bold;
+    text-decoration: none;
+}
+
+.DBM_home ul li {
+    border-style: solid;
+    border-radius: 5px;
+    border-width: 2px;
+    list-style-type: none;
+}
+
+.pop-up-list {
+    list-style-type: none;
+    padding-bottom: 10px;
+    margin: 0;
+    display: flex;
+    flex-direction: column;
+    gap: 1rem;
+    position: relative;
+}
+
+.pop-up-list li {
+    transform: translateY(100vh);
+    animation: pop-up 0.5s ease-out forwards;
+}
+
+.pop-up-list li:nth-child(1) {
+    animation-delay: 0.1s;
+}
+.pop-up-list li:nth-child(2) {
+    animation-delay: 0.2s;
+}
+.pop-up-list li:nth-child(3) {
+    animation-delay: 0.3s;
+}
+.pop-up-list li:nth-child(4) {
+    animation-delay: 0.4s;
+}
+.pop-up-list li:nth-child(5) {
+    animation-delay: 0.5s;
+}
+.pop-up-list li:nth-child(6) {
+    animation-delay: 0.6s;
+}
+.pop-up-list li:nth-child(7) {
+    animation-delay: 0.7s;
+}
+
+@keyframes pop-up {
+    to {
+        transform: translateY(0);
+    }
+}
+

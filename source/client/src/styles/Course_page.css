@@ -1,0 +1,60 @@
+.container-course-page {
+    padding: 2%;
+}
+
+#container-title {
+    color: black;
+    margin-top: 0%;
+    margin-bottom: 1%;
+    font-size: 20px;
+}
+
+.container-element {
+    border-radius: 15px;
+    padding: 2%;
+    padding-left: 2%;
+    margin-top: 0%;
+    margin-bottom: 4%;
+    background-color: rgb(200, 220, 255);
+}
+
+#section {
+    text-align: start;
+}
+
+.course-element button {
+    color: white;
+    border-radius: 10px;
+    font-weight: bold;
+    font-size: 16px;
+    font-family: Anonymous Pro;
+}
+
+.course-element view {
+    background-image: none;
+    border: solid red;
+}
+
+.course-element button:hover {
+    background-color: #3B7CD0;
+}
+
+.course-element p {
+    color: black;
+    font-weight: bold;
+    font-size: 16px;
+}
+
+.title-section {
+    border-bottom: 2px solid gray;
+    padding-bottom: 1%;
+}
+
+#title-h1 {
+    text-align: left;
+}
+
+.course-element {
+    margin-top: 2%;
+    margin-bottom: 2%;
+}

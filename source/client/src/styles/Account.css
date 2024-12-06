@@ -1,0 +1,59 @@
+.Menu {
+    display: flex;
+    width: 100%;
+    height: auto;
+  }
+  
+  .Box {
+    height: 100%;
+    padding: 2%;
+    border-radius: 15px;
+  }
+
+#function {
+    flex: 3;
+    margin-right: 3%;
+    height: 500px;
+}
+
+#info {
+    background-color: white;
+    flex: 1;    
+    color: black
+}
+
+.Button_grid {
+    position: relative;
+    display: inline-grid;
+    width: 100%;
+    grid-template-columns: auto;
+    gap: 10%;
+}
+
+.Item_grid {
+    background-color: white;
+    width: 75%;
+    border-radius: 15px;
+    text-align: center;
+    vertical-align: middle;
+    font-size: 30px;
+    color: black;
+    animation: popup 0.7s;
+}
+
+.Item_grid:hover {
+    background-color: #3f8cf0;
+}
+
+@keyframes popup {
+    0%{
+      opacity: 0%;
+      margin-top: 700px;
+    }
+    50%{
+        opacity: 25%;
+    }
+    100%{
+      opacity: 100%;
+    }
+  }
